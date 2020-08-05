@@ -1,0 +1,94 @@
+/* VARIABLES -  START */
+/* COLORS  */
+/* FONTS */
+/* VARIABLES - END */
+/* COMMONS - START */
+.defs-only {
+  display: none;
+}
+
+.full-height, section {
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* COMMONS - END */
+/* STYLES -  START */
+section {
+  transform-style: preserve-3d;
+}
+section:nth-of-type(1) {
+  background-image: linear-gradient(to top right, #2d2b63, #151120, #000000);
+}
+section:nth-of-type(2) {
+  background-image: linear-gradient(to top right, #0c4c79, #2d2b63, #151120);
+}
+section:nth-of-type(3) {
+  background-image: linear-gradient(to top right, #1378bf, #0c4c79, #2d2b63);
+}
+section .star {
+  position: absolute;
+  transform-style: preserve-3d;
+}
+section .star.tiny svg {
+  width: 5px;
+  height: 5px;
+  animation: tiny 1s alternate infinite;
+}
+section .star.small svg {
+  width: 10px;
+  height: 10px;
+  animation: small 1.25s 0.25s alternate infinite;
+}
+section .star.big svg {
+  width: 20px;
+  height: 20px;
+  animation: big 2s 1.5s alternate infinite;
+}
+section .star.medium svg {
+  width: 20px;
+  height: 20px;
+  animation: medium 1.5s 0.5s alternate infinite;
+}
+section.day {
+  position: relative;
+}
+section.day .message {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+/* STYLES - END */
+/* ANIMATIONS - START */
+@keyframes small {
+  100% {
+    transform: scale(0.5);
+  }
+}
+@keyframes tiny {
+  100% {
+    transform: scale(1.25);
+  }
+}
+@keyframes big {
+  100% {
+    transform: scale(0.8);
+  }
+}
+@keyframes medium {
+  100% {
+    transform: scale(0.5);
+  }
+}
+/* ANIMATIONS - END */

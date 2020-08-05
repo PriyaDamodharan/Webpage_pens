@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Galaxy of Stars - viewBoxChallenge</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<svg class="defs-only">
+   <symbol id="tinyStar">
+     <circle cx="5" cy="5" r="3" fill="white" stroke="white" />
+   </symbol>
+   <symbol id="miniStar">
+     <circle cx="5" cy="5" r="4" fill="white" stroke="white" />
+   </symbol>
+   <symbol id="fullStar">
+     <path d="M 0 10 C 0 10, 10 10, 10 0 C 10 0 10 10 20 10 C 20 10 10 10 10 20 C 10 20 10 10 0 10" stroke="white" fill="white" />
+   </symbol>
+   <symbol id="wideStar">
+     <path d="M 0 5 C 0 5, 10 5, 10 0 C 10 0 10 5 20 5 C 20 5 10 5 10 10 C 10 10 10 5 0 5" stroke="white" fill="white" />
+   </symbol>
+   <symbol id="longStar">
+     <path d="M 0 10 C 0 10, 5 5, 5 0 C 5 0 5 5 10 10 C 10 10 5 15 5 20 C 5 20 5 15 0 10" stroke="white" fill="white" />
+   </symbol>
+   <symbol id="bigStar">
+     <path d="M 0 20 C 0 20, 20 20, 20 0 C 20 0 20 20 40 20 C 40 20 20 20 20 40 C 20 40 20 20 0 20" stroke="white" fill="white" />
+   </symbol>
+ </svg>
+
+ <body>
+   <section>
+     <div class="star tiny">
+       <svg viewBox="0 0 10 10">
+         <use href="#tinyStar" />
+       </svg>
+     </div>
+     <div class="star tiny">
+       <svg viewBox="0 0 10 10">
+         <use href="#tinyStar" />
+       </svg>
+     </div>
+     <div class="star tiny">
+       <svg viewBox="0 0 10 10">
+         <use href="#tinyStar" />
+       </svg>
+     </div>
+     <div class="star tiny">
+       <svg viewBox="0 0 10 10">
+         <use href="#tinyStar" />
+       </svg>
+     </div>
+     <div class="star small">
+       <svg viewBox="0 0 10 10">
+         <use href="#tinyStar" />
+       </svg>
+     </div>
+     <div class="star small">
+       <svg viewBox="0 0 10 10">
+         <use href="#miniStar" />
+       </svg>
+     </div>
+     <div class="star small">
+       <svg viewBox="0 0 10 10">
+         <use href="#miniStar" />
+       </svg>
+     </div>
+     <div class="star small">
+       <svg viewBox="0 0 10 10">
+         <use href="#miniStar" />
+       </svg>
+     </div>
+     <div class="star small ">
+       <svg viewBox="0 0 10 10">
+         <use href="#miniStar" /> </svg>
+     </div>
+     <div class="star medium">
+       <svg viewBox="0 0 20 20">
+         <use href="#fullStar" />
+       </svg>
+     </div>
+     <div class="star medium">
+       <svg viewBox="0 0 20 20">
+         <use href="#wideStar" />
+       </svg>
+     </div>
+     <div class="star medium">
+       <svg viewBox="0 0 20 20">
+         <use href="#wideStar" />
+       </svg>
+     </div>
+     <div class="star medium">
+       <svg viewBox="0 0 20 20">
+         <use href="#wideStar" />
+       </svg>
+     </div>
+     <div class="star medium">
+       <svg viewBox="0 0 20 20">
+         <use href="#longStar" />
+       </svg>
+     </div>
+     <div class="star medium">
+       <svg viewBox="0 0 20 20">
+         <use href="#longStar" />
+       </svg>
+     </div>
+     <div class="star big">
+       <svg viewBox="0 0 40 40">
+         <use href="#bigStar" />
+       </svg>
+     </div>
+     <div class="star big">
+       <svg viewBox="0 0 40 40">
+         <use href="#longStar" />
+       </svg>
+     </div>
+     <div class="star big">
+       <svg viewBox="0 0 40 40">
+         <use href="#longStar" />
+       </svg>
+     </div>
+     <div class="star tiny">
+       <svg viewBox="0 0 10 10">
+         <use href="#tinyStar" />
+       </svg>
+     </div>
+     <div class="star tiny">
+       <svg viewBox="0 0 10 10">
+         <use href="#tinyStar" />
+       </svg>
+     </div>
+     <div class="star tiny">
+       <svg viewBox="0 0 10 10">
+         <use href="#tinyStar" />
+       </svg>
+     </div>
+     <div class="star tiny">
+       <svg viewBox="0 0 10 10">
+         <use href="#tinyStar" />
+       </svg>
+     </div>
+     <div class="star small">
+       <svg viewBox="0 0 10 10">
+         <use href="#tinyStar" />
+       </svg>
+     </div>
+     <div class="star small">
+       <svg viewBox="0 0 10 10">
+         <use href="#tinyStar" />
+       </svg>
+     </div>
+     <div class="star small">
+       <svg viewBox="0 0 10 10">
+         <use href="#tinyStar" />
+       </svg>
+     </div>
+     <div class="star small">
+       <svg viewBox="0 0 10 10">
+         <use href="#miniStar" />
+       </svg>
+     </div>
+     <div class="star small ">
+       <svg viewBox="0 0 10 10">
+         <use href="#miniStar" />
+       </svg>
+     </div>
+     <div class="star medium">
+       <svg viewBox="0 0 20 20">
+         <use href="#fullStar" />
+
+       </svg>
+     </div>
+     <div class="star medium">
+       <svg viewBox="0 0 20 20">
+         <use href="#wideStar" />
+       </svg>
+     </div>
+     <div class="star medium">
+       <svg viewBox="0 0 20 20">
+         <use href="#wideStar" />
+
+       </svg>
+     </div>
+     <div class="star medium">
+       <svg viewBox="0 0 20 20">
+         <use href="#wideStar" />
+       </svg>
+     </div>
+     <div class="star medium">
+       <svg viewBox="0 0 20 20">
+         <use href="#longStar" />
+       </svg>
+     </div>
+     <div class="star big">
+       <svg viewBox="0 0 40 40">
+         <use href="#bigStar" />
+       </svg>
+     </div>
+     <div class="star big">
+       <svg viewBox="0 0 40 40">
+         <use href="#bigStar" />
+       </svg>
+     </div>
+     <div class="star big">
+       <svg viewBox="0 0 40 40">
+         <use href="#bigStar" />
+       </svg>
+     </div>
+
+     <div class="star tiny">
+       <svg viewBox="0 0 10 10">
+         <use href="#tinyStar" />
+       </svg>
+     </div>
+     <div class="star small">
+       <svg viewBox="0 0 10 10">
+         <use href="#tinyStar" />
+       </svg>
+     </div>
+     <div class="star small">
+       <svg viewBox="0 0 10 10">
+         <use href="#tinyStar" />
+       </svg>
+     </div>
+     <div class="star small">
+       <svg viewBox="0 0 10 10">
+         <use href="#miniStar" />
+       </svg>
+     </div>
+     <div class="star small">
+       <svg viewBox="0 0 10 10">
+         <use href="#miniStar" />
+       </svg>
+     </div>
+
+     <div class="star medium">
+       <svg viewBox="0 0 20 20">
+         <use href="#wideStar" />
+       </svg>
+     </div>
+     <div class="star medium">
+       <svg viewBox="0 0 20 20">
+         <use href="#wideStar" />
+       </svg>
+     </div>
+     <div class="star medium">
+       <svg viewBox="0 0 20 20">
+         <use href="#wideStar" />
+       </svg>
+     </div>
+     <div class="star big">
+       <svg viewBox="0 0 40 40">
+         <use href="#bigStar" />
+       </svg>
+     </div>
+     <div class="star tiny">
+       <svg viewBox="0 0 10 10">
+         <use href="#tinyStar" />
+       </svg>
+     </div>
+     <div class="star tiny">
+       <svg viewBox="0 0 10 10">
+         <use href="#tinyStar" />
+       </svg>
+     </div>
+     <div class="star tiny">
+       <svg viewBox="0 0 10 10">
+         <use href="#tinyStar" /> </svg>
+     </div>
+     <div class="star tiny">
+       <svg viewBox="0 0 10 10">
+         <use href="#tinyStar" /> </svg>
+     </div>
+     <div class="star small">
+       <svg viewBox="0 0 10 10">
+         <use href="#tinyStar" /> </svg>
+     </div>
+     <div class="star small">
+       <svg viewBox="0 0 10 10">
+         <use href="#miniStar" /> </svg>
+     </div>
+     <div class="star small">
+       <svg viewBox="0 0 10 10">
+         <use href="#miniStar" />
+       </svg>
+     </div>
+     <div class="star small">
+       <svg viewBox="0 0 10 10">
+         <use href="#miniStar" />
+       </svg>
+     </div>
+     <div class="star small ">
+       <svg viewBox="0 0 10 10">
+         <use href="#miniStar" />
+       </svg>
+     </div>
+     <div class="star medium">
+       <svg viewBox="0 0 20 20">
+         <use href="#fullStar" />
+       </svg>
+     </div>
+     <div class="star medium">
+       <svg viewBox="0 0 20 20">
+         <use href="#wideStar" />
+       </svg>
+     </div>
+     <div class="star medium">
+       <svg viewBox="0 0 20 20">
+         <use href="#wideStar" />
+       </svg>
+     </div>
+     <div class="star medium">
+       <svg viewBox="0 0 20 20">
+         <use href="#wideStar" />
+       </svg>
+     </div>
+     <div class="star medium">
+       <svg viewBox="0 0 20 20">
+         <use href="#longStar" />
+       </svg>
+     </div>
+     <div class="star big">
+       <svg viewBox="0 0 40 40">
+         <use href="#bigStar" />
+       </svg>
+     </div>
+     <div class="star big">
+       <svg viewBox="0 0 40 40">
+         <use href="#bigStar" />
+       </svg>
+     </div>
+     <div class="star big">
+       <svg viewBox="0 0 40 40">
+         <use href="#bigStar" />
+       </svg>
+     </div>
+   </section>
+   <section>
+     <div class="star tiny">
+       <svg viewBox="0 0 10 10">
+         <use href="#tinyStar" />
+       </svg>
+     </div>
+     <div class="star tiny">
+       <svg viewBox="0 0 10 10">
+         <use href="#tinyStar" />
+       </svg>
+     </div>
+     <div class="star small">
+       <svg viewBox="0 0 10 10">
+         <use href="#tinyStar" />
+       </svg>
+     </div>
+     <div class="star small">
+       <svg viewBox="0 0 10 10">
+         <use href="#miniStar" />
+       </svg>
+     </div>
+     <div class="star small">
+       <svg viewBox="0 0 10 10">
+         <use href="#miniStar" />
+       </svg>
+     </div>
+     <div class="star tiny">
+       <svg viewBox="0 0 10 10">
+         <use href="#tinyStar" />
+       </svg>
+     </div>
+     <div class="star tiny">
+       <svg viewBox="0 0 10 10">
+         <use href="#tinyStar" /> </svg>
+     </div>
+
+     </div>
+     <div class="star small">
+       <svg viewBox="0 0 10 10">
+         <use href="#tinyStar" /> </svg>
+     </div>
+     <div class="star small">
+       <svg viewBox="0 0 10 10">
+         <use href="#tinyStar" /> </svg>
+     </div>
+     <div class="star small">
+       <svg viewBox="0 0 10 10">
+         <use href="#miniStar" /> </svg>
+     </div>
+
+     <div class="star medium">
+       <svg viewBox="0 0 20 20">
+         <use href="#wideStar" />
+       </svg>
+     </div>
+     <div class="star medium">
+       <svg viewBox="0 0 20 20">
+         <use href="#wideStar" /> </svg>
+     </div>
+     <div class="star medium">
+       <svg viewBox="0 0 20 20">
+         <use href="#wideStar" /> </svg>
+     </div>
+
+     <div class="star big">
+       <svg viewBox="0 0 40 40">
+         <use href="#bigStar" /> </svg>
+     </div>
+     <div class="star tiny">
+       <svg viewBox="0 0 10 10">
+         <use href="#tinyStar" /> </svg>
+     </div>
+     <div class="star tiny">
+       <svg viewBox="0 0 10 10">
+         <use href="#tinyStar" /> </svg>
+     </div>
+     <div class="star tiny">
+       <svg viewBox="0 0 10 10">
+         <use href="#tinyStar" /> </svg>
+     </div>
+     <div class="star tiny">
+       <svg viewBox="0 0 10 10">
+         <use href="#tinyStar" /> </svg>
+     </div>
+     <div class="star small">
+       <svg viewBox="0 0 10 10">
+         <use href="#tinyStar" /> </svg>
+     </div>
+     <div class="star small">
+       <svg viewBox="0 0 10 10">
+         <use href="#tinyStar" /> </svg>
+     </div>
+     <div class="star small">
+       <svg viewBox="0 0 10 10">
+         <use href="#miniStar" /> </svg>
+     </div>
+     <div class="star small">
+       <svg viewBox="0 0 10 10">
+         <use href="#miniStar" /> </svg>
+     </div>
+     <div class="star small ">
+       <svg viewBox="0 0 10 10">
+         <use href="#miniStar" /> </svg>
+     </div>
+     <div class="star medium">
+       <svg viewBox="0 0 20 20">
+         <use href="#fullStar" />
+       </svg>
+     </div>
+     <div class="star medium">
+       <svg viewBox="0 0 20 20">
+         <use href="#wideStar" />
+       </svg>
+     </div>
+     <div class="star medium">
+       <svg viewBox="0 0 20 20">
+         <use href="#wideStar" />
+       </svg>
+     </div>
+     <div class="star medium">
+       <svg viewBox="0 0 20 20">
+         <use href="#longStar" />
+       </svg>
+     </div>
+     <div class="star medium">
+       <svg viewBox="0 0 20 20">
+         <use href="#longStar" />
+       </svg>
+     </div>
+     <div class="star big">
+       <svg viewBox="0 0 40 40">
+         <use href="#bigStar" />
+       </svg>
+     </div>
+     <div class="star big">
+       <svg viewBox="0 0 40 40">
+         <use href="#bigStar" />
+       </svg>
+     </div>
+     <div class="star big">
+       <svg viewBox="0 0 40 40">
+         <use href="#longStar" />
+       </svg>
+     </div>
+
+   </section>
+   <section class=day>
+     <p class="message">Scroll up for a sky full of stars!<p>
+   </section>
+ </body>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
