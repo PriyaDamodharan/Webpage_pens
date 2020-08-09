@@ -1,0 +1,52 @@
+:root {
+  --size: 100px;
+}
+
+html {
+  background-color: #15202B;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+svg {
+  width: var(--size);
+  height: var(--size);
+  cursor: pointer;
+  border-radius: 999px;
+  overflow: visible;
+}
+svg > * {
+  opacity: 0;
+}
+svg .stroke {
+  opacity: 1;
+}
+
+.sparkles {
+  opacity: 1;
+}
+.sparkles path {
+  stroke-dasharray: 5 5;
+  stroke-dashoffset: -5;
+}
+
+@media (hover: hover) {
+  svg:hover {
+    background-color: #E1255E15;
+  }
+  svg:hover path:last-child {
+    fill: #E1255E;
+  }
+}
+a {
+  user-select: none;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+a img {
+  width: 40px;
+  height: 40px;
+}
