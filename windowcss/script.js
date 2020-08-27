@@ -1,0 +1,41 @@
+const lamp = document.getElementById("light-switch");
+const topWindow = document.getElementById("window-top");
+const mainWindow = document.getElementById("window-main");
+const cloudOne = document.getElementsByClassName("cloud")[0];
+const cloudTwo = document.getElementsByClassName("cloud-two")[0];
+const cloudThree = document.getElementsByClassName("cloud-three")[0];
+const cloudFour = document.getElementsByClassName("cloud-ball")[0];
+const cloudFive = document.getElementsByClassName("cloud-ball-two")[0];
+const cloudSix = document.getElementsByClassName("cloud-ball-three")[0];
+const cloudSeven = document.getElementsByClassName("cloud-ball-four")[0];
+const cloudEight = document.getElementsByClassName("cloud-ball-five")[0];
+const cloudNine = document.getElementsByClassName("cloud-ball-six")[0];
+const lightSource = document.getElementsByClassName("light-source")[0];
+const moon = document.getElementsByClassName("moon")[0];
+const star = document.getElementsByClassName("star")[0];
+const starTwo = document.getElementsByClassName("star-two")[0];
+const starThree = document.getElementsByClassName("star-three")[0];
+const starFour = document.getElementsByClassName("star-four")[0];
+const starFive = document.getElementsByClassName("star-five")[0];
+const starSix = document.getElementsByClassName("star-six")[0];
+
+
+lamp.addEventListener("click", () => {
+  topWindow.classList.toggle("night");
+  mainWindow.classList.toggle("night");
+  cloudOne.classList.toggle("hide-cloud");
+  cloudTwo.classList.toggle("hide-cloud");
+  cloudThree.classList.toggle("hide-cloud");
+  cloudFour.classList.toggle("hide-cloud");
+  cloudFive.classList.toggle("hide-cloud");
+  cloudSix.classList.toggle("hide-cloud");
+  cloudSeven.classList.toggle("hide-cloud");
+  cloudEight.classList.toggle("hide-cloud");
+  cloudNine.classList.toggle("hide-cloud");
+  lightSource.classList.toggle("show-light");
+  moon.classList.toggle("show-moon");
+  star.classList.toggle("show-star");
+  starTwo.classList.toggle("show-star");
+  starThree.classList.toggle("show-star");
+  starFour.classList.toggle("show-star");
+});
