@@ -1,0 +1,113 @@
+/* ***** Colors - Start ***** */
+/* ***** Colors - End ***** */
+/* ***** Global Styles - Start ***** */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #111;
+  overflow: hidden;
+}
+
+.container, .checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.outline-wrapper .line-1, .outline-wrapper .line-2, .outline-wrapper .line-3, .outline-wrapper .line-4 {
+  position: absolute;
+  width: 0px;
+  height: 5px;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+/* ***** Global Styles - End ***** */
+/* ***** Specific Styles - Start ***** */
+.container {
+  height: 100vh;
+}
+
+.checkbox {
+  width: 75px;
+  height: 75px;
+  border: 2px solid #2d343c;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+}
+.checkbox:hover {
+  border: 2px solid #3f71ff;
+}
+.checkbox .fill-color {
+  position: absolute;
+  width: 73px;
+  height: 73px;
+  border-radius: 16px;
+  background-color: #3f71ff;
+  clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+}
+.checkbox .tick-mark-1 {
+  position: absolute;
+  width: 5px;
+  height: 21px;
+  right: 44px;
+  bottom: 20px;
+  background-color: #fff;
+  border-radius: 20px 20px 0 0;
+  transform: rotate(320deg);
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+.checkbox .tick-mark-2 {
+  position: absolute;
+  width: 5px;
+  height: 32px;
+  left: 41px;
+  bottom: 20px;
+  border-radius: 0 0 20px 20px;
+  background-color: #fff;
+  transform: rotate(230deg);
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+.outline-wrapper .line-1 {
+  left: calc(50% - 70px);
+}
+.outline-wrapper .line-2 {
+  top: calc(50% - 60px);
+  left: calc(50% - 10px);
+  transform: rotate(90deg);
+}
+.outline-wrapper .line-3 {
+  right: calc(50% - 70px);
+}
+.outline-wrapper .line-4 {
+  bottom: calc(50% - 60px);
+  left: calc(50% - 10px);
+  transform: rotate(90deg);
+}
+
+.information-text {
+  position: absolute;
+  bottom: calc(50% - 100px);
+  color: #fff;
+}
+.information-text img {
+  margin-bottom: -6px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 70px;
+}
+
+/* ***** Specific Styles - End ***** */
